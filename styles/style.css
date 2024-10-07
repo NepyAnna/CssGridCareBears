@@ -5,17 +5,38 @@ header {
     gap: 10px;
 }
 
+.text_box {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    grid-column: 1;
+    grid-row: 1;
+
+    border: 1px solid black;
+}
+
+.image_box {
+    grid-column: 2;
+    grid-row: 1;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-
+    margin-top: 10px;
     gap: 10px;
 }
 
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;/* Зберігаємо пропорції, заповнюючи ячейку */
+    overflow: hidden;
     border: 1px solid black;
 }
 
